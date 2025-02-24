@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: blue;
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 425px;
+    flex-grow: 1;
+
+}
+.search-section .location-button{
+    height: 54px;
+    width: 56px;
+    outline: none;
+    background: transparent;
+    border: 2px solid olive;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search-section .location-button:hover{
+    color: #fff;
+    background-color: blue;
+    border: 1px solid yellow;
+}
+.search-section .input-wrapper{
+    height: 54px;
+    width: 100%;
+    position: relative;
+}
+.search-section .input-wrapper:focus{
+    border-color: #5f41e4;
+}
+.search-section .input-wrapper span{
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.search-section{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    gap: 9px;
+}
+.search-section .search-input{
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid olive;
+    padding: 0px 25px 0px 50px;
+    transition: 0.1s ease;
+}
+.hourly-weather .weather-list{
+    display: flex;
+}
+.hourly-weather .weather-list .weather-item{
+    width: 28px;
+    aspect-ratio: 1;
+}
+.weather-section .current-weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 50px 0px;
+}
+.current-weather .weather-icon{
+    width: 140px;
+    aspect-ratio: 1;
+}
+.current-weather .temperature{
+    font-size: 3.3rem;
+    margin: 50px 0;
+}
+.current-weather .description{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.current-weather .temperature span{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.hourly-weather{
+    padding: 16px 10px;
+    border-top: 1px solid black;
+}
+.hourly-weather .weather-list{
+    list-style: none;
+    display: flex;
+    gap: 90px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 16px;
+    margin-bottom: -16px;
+    scrollbar-color: transparent transparent;
+}
+.hourly-weather .weather-list:hover{
+    scrollbar-color: grey transparent;
+}
+.hourly-weather .weather-item{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+}
+@media (max-width:624px)
+{
+    body{
+        padding: 15px;
+    }
+    .search-section{
+        padding: 20px;
+    }
+    .hourly-weather{
+        padding: 16px 20px;
+    }
+    .hourly-weather .weather-list{
+        gap : 32px;
+    }
+}

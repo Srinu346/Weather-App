@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Srinu346/Weather-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Srinu346/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Srinu346/Weather-App#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "src": "^1.1.2",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.8",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
