@@ -1,7 +1,7 @@
 const search = document.querySelector('.location-button'); 
 const input = document.querySelector('.search-input');
 const hourlyWeatherDiv = document.querySelector('.hourly-weather .weather-list');
-const API_KEy = "b4dda475902544d7bed125249251002";
+const API_KEy = "81aa35aef69948a094d145805250405";
 const weatherCodes = {
     clear: [1000],
     clouds: [1003, 1006, 1009],
